@@ -1,87 +1,70 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Description" content="Storybook Generator">
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <base href="/kidstory/">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Storybook Generator">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="storybook_generator">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <title>Storybook Generator</title>
+
+  <style>
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #ffffff;
+    }
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #2196F3;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;base href="/kidstory/"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta content="IE=Edge" http-equiv="X-UA-Compatible"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="Storybook Generator"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="mobile-web-app-capable" content="yes"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="apple-mobile-web-app-status-bar-style" content="black"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="apple-mobile-web-app-title" content="storybook_generator"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="apple-touch-icon" href="icons/Icon-192.png"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="icon" type="image/png" href="favicon.png"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Storybook Generator&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="manifest" href="manifest.json"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.loading {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.spinner {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 5px solid #f3f3f3;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-top: 5px solid #2196F3;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 50%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>animation: spin 1s linear infinite;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>@keyframes spin {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>0% { transform: rotate(0deg); }</p>
-<p class="p1"><span class="Apple-converted-space">      </span>100% { transform: rotate(360deg); }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="loading"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="spinner"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="flutter.js" defer&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>window.addEventListener('load', function() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>var loading = document.querySelector('.loading');</p>
-<p class="p2"><span class="Apple-converted-space">      </span></p>
-<p class="p1"><span class="Apple-converted-space">      </span>_flutter = {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>loader: {</p>
-<p class="p1"><span class="Apple-converted-space">          </span>serviceWorker: {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>serviceWorkerVersion: null</p>
-<p class="p1"><span class="Apple-converted-space">          </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>};</p>
-<p class="p2"><span class="Apple-converted-space">      </span></p>
-<p class="p1"><span class="Apple-converted-space">      </span>var scriptLoaderPromise = new Promise((resolve) =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>var scriptElement = document.createElement('script');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>scriptElement.src = 'main.dart.js';</p>
-<p class="p1"><span class="Apple-converted-space">        </span>scriptElement.type = 'application/javascript';</p>
-<p class="p1"><span class="Apple-converted-space">        </span>document.body.append(scriptElement);</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>scriptElement.addEventListener('load', () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">          </span>loading.style.display = 'none';</p>
-<p class="p1"><span class="Apple-converted-space">          </span>resolve();</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p1"><span class="Apple-converted-space">      </span>});</p>
-<p class="p1"><span class="Apple-converted-space">    </span>});</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<div class="loading">
+  <div class="spinner"></div>
+</div>
+
+<script src="flutter.js" defer></script>
+<script>
+  window.addEventListener('load', function() {
+    var loading = document.querySelector('.loading');
+
+    _flutter = {
+      loader: {
+        serviceWorker: {
+          serviceWorkerVersion: null
+        }
+      }
+    };
+
+    var scriptLoaderPromise = new Promise((resolve) => {
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'main.dart.js';
+      scriptElement.type = 'application/javascript';
+      document.body.append(scriptElement);
+
+      scriptElement.addEventListener('load', () => {
+        loading.style.display = 'none';
+        resolve();
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
